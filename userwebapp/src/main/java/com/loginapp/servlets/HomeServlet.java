@@ -3,6 +3,7 @@ package com.loginapp.servlets;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,6 +23,8 @@ public class HomeServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
+//		RequestDispatcher rd = request.getRequestDispatcher("subjects.html");
+//		rd.include(request, response);
 	}
 
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>STUDENTS MASTER LIST</title>
+</head>
+<body>
+<div align="center">
+	<form action="studentServlet" method="post">
+		<h1>STUDENTS MASTER LIST</h1>
+			<table>			
+				<tr>
+					<td>Student name:</td>
+					<td><input name="studentname" /></td>
+				</tr>	
+				<tr>
+					<td>Class:</td>
+					<td><input name="classname" /></td>
+				</tr>
+				<tr><td></td></tr>
+				<tr>
+					<td></td>
+					<td>
+					<input type="submit" value="SUBMIT" /> 
+					</td>
+				</tr>
+			</table>
+	</form>
+	<br><br>
+	<form action = "readStudentServlet" method="post"><input type="submit" value="View all students from database" /></form>
+</div>
+</body>
+</html>
